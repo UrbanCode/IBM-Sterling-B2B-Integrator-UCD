@@ -31,7 +31,7 @@ import org.apache.tools.ant.filters.ReplaceTokens
 
 apply plugin: 'groovy'
 
-def pluginName = 'helloworld'
+defaultTasks 'distPlugin'
 
 configurations {
     // Remove the groovy-all jar from runtime dependencies
@@ -40,7 +40,6 @@ configurations {
 
 repositories {
     mavenCentral()
-    mavenLocal()
 }
 
 dependencies {
@@ -58,12 +57,20 @@ sourceSets {
     }
 }
 
+task copyDeps(type: Copy) {
+    from configurations.runtime
+    into 'lib'
+}
+
 task distPlugin(type: Zip, dependsOn: 'compileGroovy') {
-    from sourceSets.main.groovy.srcDirs
+    def releaseVersion = apiVersion + "." + pluginVersion
+    from(sourceSets.main.groovy.srcDirs) {
+        filter(ReplaceTokens, tokens: [API_VERSION: apiVersion, RELEASE_VERSION: releaseVersion])
+    }
     into('lib') {
         from configurations.runtime
     }
-    def releaseVersion = apiVersion + "." + pluginVersion
-    filter(ReplaceTokens, tokens: [API_VERSION: apiVersion, RELEASE_VERSION: releaseVersion])
     archiveName = "${pluginName}-${releaseVersion}.zip"
 }
+
+task cleanAll(dependsOn: ['clean', 'cleanCopyDeps', 'cleanDistPlugin'])
