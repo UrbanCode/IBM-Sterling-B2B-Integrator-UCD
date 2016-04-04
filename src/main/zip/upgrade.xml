@@ -1,20 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<plugin-upgrade
-        xmlns="http://www.urbancode.com/UpgradeXMLSchema_v1"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-
-  <migrate to-version="2">
-    <migrate-command name="Hello World">
-      <migrate-properties>
-        <!-- Adding a new property always requires the 'default' attribute -->
-        <migrate-property name="name" default="World"/>
-      </migrate-properties>
-
-      <!-- Removing a property requires using the remove-properties and remove-property elements:
-      <remove-properties>
-        <remove-property name="name"/>
-      </remove-properties>
-      -->
-    </migrate-command>
-  </migrate>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<plugin-upgrade xmlns="http://www.urbancode.com/UpgradeXMLSchema_v1" xmlns:server="http://www.urbancode.com/PluginServerXMLSchema_v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!-- The purpose of plugin.xml is to provide upgrade paths when the plugin version is changed.
+       If the upgrade paths are specified correctly, users will be upgraded to the new version 
+       without interruption. -->
 </plugin-upgrade>

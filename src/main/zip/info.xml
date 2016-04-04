@@ -1,28 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pluginInfo>
-  <!-- Do not change the release-version, the build process injects it. -->
-  <release-version>@RELEASE_VERSION@</release-version>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pluginInfo xmlns="http://www.urbancode.com/InfoXMLSchema_v1" xmlns:server="http://www.urbancode.com/PluginServerXMLSchema_v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
+  
+  <author name="Fan Hu">
+    <organization>IBM Cloud</organization>
+    <email>fanhu@au1.ibm.com</email>
+    <website>http://urbancode.com</website>
+    <bio>bio</bio>
+  </author>
+  
+  <integration type="Deploy"/>
+
+  <tool-description> </tool-description>
+
+  
+  <source url="url"/>
+  <meta-html>
+    <meta content="" name="description"/>
+    <meta content="" name="keywords"/>  
+  </meta-html>
+    
+  <release-version>@RELEASE_VERSION@</release-version>  
+    
   <release-notes>
     <!--
-      The release-note should document the changes, improvements, or bug fixes introduced
-      with the new plugin version
-
-      The release-note may contain text
-
+      **release-note IS required**
+      
+      The plugin-version name must match the plugin version found in the plugin.xml file 
+      
+      The release-note should document the changes, improvements, or bug fixes introduced 
+      with the new plugin version 
+        
+      The release-note may contain text or reference a file in the plugin zip package
+      
       For example your release note could be:
       Support for was added for version 10.0 for software X
-
-      To add a new release note add this with a description in it of the changes:
-      <release-note plugin-version="1">....</release-note>
-    -->
-
-    <release-note plugin-version="1">
-      Installing this plugin will give you access to the steps listed below. These steps can be used when designing a build.
-    </release-note>
-
-    <release-note plugin-version="2">
-      Added a name property to the Hello World step
-    </release-note>
+      or 
+      releaseNotes/release1.html (where release1.html contains html formatted version information)
+      -->
+      
+	  <release-note plugin-version="1">
+Initial Release. 
+	  </release-note>
+    
   </release-notes>
 </pluginInfo>
