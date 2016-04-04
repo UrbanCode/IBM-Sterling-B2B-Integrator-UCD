@@ -5,7 +5,9 @@ This UrbanCode Deploy plug-in is for integrating with Sterling B2B Integrator al
 
 ### Compiling Source
 `gradle`
-Run gradle in the root directory to build a project or through BlueMix's Gradle build process. 
+Run gradle in the root directory to build a project or through BlueMix's Gradle build process. This pre-built .zip can be found by
+going to the "Build & Deploy" screen. Clicking "View logs and history" on a successful build. Under the "Artifacts" tab, there 
+will be a .zip file named "SterlingB2Bi-<UniqueID>". This is the installable plug-in.
 
 ### The Sterling B2Bi plug-in includes the following steps:
 	
