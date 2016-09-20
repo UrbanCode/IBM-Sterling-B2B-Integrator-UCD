@@ -5,7 +5,7 @@ install:
 - gradle build
 before_script:
 - gradle test
-- export PLUGIN_VERSION=${TRAVIS_TAG}.${TRAVIS_COMMIT:0:7}
+- export PLUGIN_VERSION=${TRAVIS_COMMIT:0:7}
 script:
 - gradle -PpluginVersion=${PLUGIN_VERSION}
 jdk:
