@@ -1,4 +1,11 @@
-/* This is an example step groovy to show the proper use of APTool
+/**
+ *  © Copyright IBM Corporation 2014, 2016.
+ *  This is licensed under the following license.
+ *  The Eclipse Public 1.0 License (http://www.eclipse.org/legal/epl-v10.html)
+ *  U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+ */
+
+ /* This is an example step groovy to show the proper use of APTool
  * In order to use import these utilities, you have to use the "pluginutilscripts" jar
  * that comes bundled with this plugin example.
  */

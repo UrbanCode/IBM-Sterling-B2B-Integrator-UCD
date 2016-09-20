@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+ - © Copyright IBM Corporation 2014, 2016.
+ - This is licensed under the following license.
+ - The Eclipse Public 1.0 License (http://www.eclipse.org/legal/epl-v10.html)
+ - U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+-->
 <plugin xmlns="http://www.urbancode.com/PluginXMLSchema_v1" xmlns:server="http://www.urbancode.com/PluginServerXMLSchema_v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <header>
-    <identifier id="com.urbancode.air.plugin.sterlingb2bi" name="Sterling B2Bi" version="1"/>
+    <identifier id="com.urbancode.air.plugin.sterlingb2bi" name="IBM Sterling B2Bi" version="2"/>
     <description>The Sterling B2B Integrator plug-in enables access to common functionality for starting services and importing files.</description>
     <tag>Sterling/Automation</tag>
   </header>
@@ -76,7 +82,7 @@
   </step-type>
 
   <step-type name="Restart Windows Server">
-    <description>Restart widnows server. Quit after the command submitted immediately</description>
+    <description>Restart widnows server. Quit after the command submitted immediately. This method is also available in fully supported Windows System Tools plug-in.</description>
     <properties>
     </properties>
     <!-- This is the standard post processing script. It sets the step to Success if the exit code
