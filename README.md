@@ -22,7 +22,7 @@ This UrbanCode Deploy plug-in is for integrating with Sterling B2B Integrator al
 	This plug-in requires version 6.1.1 or later of IBM UrbanCode Deploy.
 
 ### Installation
-	The packaged zip is located in the build/distributionsfolder. No special steps are required for installation.
+	The packaged zip is located in the build/distributions folder. No special steps are required for installation.
 	See Installing plug-ins in UrbanCode Deploy. Download this zip file if you wish to skip the
 	manual build step. Otherwise, download the entire IBM-Sterling-B2B-Integrator-UCD and
 	run the "gradle" command in the top level folder. This should compile the code and create
