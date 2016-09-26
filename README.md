@@ -1,6 +1,6 @@
 # IBM UrbanCode Deploy Sterling B2B Integrator Plug-in [![Build Status](https://travis-ci.org/IBM-UrbanCode/IBM-Sterling-B2B-Integrator-UCD.svg?branch=master)](https://travis-ci.org/IBM-UrbanCode/IBM-Sterling-B2B-Integrator-UCD)
 ---
-Note: This is not the plugin distributable! This is the source code. To find the installable plugin, go into the 'Releases' tab, and download a stable version.
+Note: This is not the plugin distributable! This is the source code. To find the installable plugin, go into the 'release' tab, and download a stable version.
 
 This UrbanCode Deploy plug-in is for integrating with Sterling B2B Integrator allowing users to automate their B2B processes.
 
