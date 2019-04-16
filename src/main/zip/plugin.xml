@@ -8,7 +8,7 @@
 <plugin xmlns="http://www.urbancode.com/PluginXMLSchema_v1" xmlns:server="http://www.urbancode.com/PluginServerXMLSchema_v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <header>
-    <identifier id="com.urbancode.air.plugin.sterlingb2bi" name="IBM Sterling B2Bi" version="2"/>
+    <identifier id="com.urbancode.air.plugin.sterlingb2bi" name="IBM Sterling B2Bi" version="@API_VERSION@"/>
     <description>The Sterling B2B Integrator plug-in enables access to common functionality for starting services and importing files.</description>
     <tag>Sterling/Automation</tag>
   </header>
