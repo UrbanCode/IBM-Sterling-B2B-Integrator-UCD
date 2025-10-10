@@ -53,6 +53,10 @@ dependencies {
     // testCompile group: 'junit', name: 'junit', version: '4.11'
 }
 
+configurations {
+    compileClasspath.extendsFrom implementation
+}
+
 sourceSets {
     main {
         groovy {
@@ -62,7 +66,7 @@ sourceSets {
 }
 
 task copyDeps(type: Copy) {
-    from configurations.runtime
+    from configurations.runtimeClasspath
     into 'lib'
 }
 
