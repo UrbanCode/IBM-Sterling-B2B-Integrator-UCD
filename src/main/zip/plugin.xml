@@ -74,7 +74,8 @@
     ${GROOVY_HOME}/bin/groovy -cp src cmd.groovy ${PLUGIN_INPUT_PROPS} ${PLUGIN_OUTPUT_PROPS} -->
     <command program="${GROOVY_HOME}/bin/groovy">
       <arg value="-cp"/>
-      <arg path="lib/groovy-plugin-utils-1.0.jar:lib/gson-2.2.4.jar"/>
+      <arg path="classes"/>
+<!--        <arg path="lib/groovy-plugin-utils-1.0.jar:lib/gson-2.2.4.jar"/>-->
       <arg file="serviceStatus.groovy"/>
       <arg file="${PLUGIN_INPUT_PROPS}"/>
       <arg file="${PLUGIN_OUTPUT_PROPS}"/>
@@ -216,7 +217,8 @@
     ${GROOVY_HOME}/bin/groovy -cp src cmd.groovy ${PLUGIN_INPUT_PROPS} ${PLUGIN_OUTPUT_PROPS} -->
     <command program="${GROOVY_HOME}/bin/groovy">
       <arg value="-cp"/>
-      <arg path="lib/groovy-plugin-utils-1.0.jar:lib/gson-2.2.4.jar"/>
+      <arg path="classes"/>
+<!--        <arg path="lib/groovy-plugin-utils-1.0.jar:lib/gson-2.2.4.jar"/>-->
       <arg file="install3rdPartyJars.groovy"/>
       <arg file="${PLUGIN_INPUT_PROPS}"/>
       <arg file="${PLUGIN_OUTPUT_PROPS}"/>
@@ -324,7 +326,8 @@
         ${GROOVY_HOME}/bin/groovy -cp src cmd.groovy ${PLUGIN_INPUT_PROPS} ${PLUGIN_OUTPUT_PROPS} -->
         <command program="${GROOVY_HOME}/bin/groovy">
           <arg value="-cp"/>
-          <arg path="lib/groovy-plugin-utils-1.0.jar:lib/gson-2.2.4.jar"/>
+          <arg path="classes"/>
+<!--            <arg path="lib/groovy-plugin-utils-1.0.jar:lib/gson-2.2.4.jar"/>-->
           <arg file="assembleBatchFile.groovy"/>
           <arg file="${PLUGIN_INPUT_PROPS}"/>
           <arg file="${PLUGIN_OUTPUT_PROPS}"/>
