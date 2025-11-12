@@ -38,8 +38,6 @@ def tagName = props['tagName'];
 def numberOfThreads = props['numberOfThreads'];
 def password = props['password'];
 
-println "Data: "+numberOfThreads
-
 println("begin to check folders to assemble xmls into a batch file");
 
 def dir = new File(xmlFolder);
