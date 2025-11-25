@@ -9,8 +9,8 @@
  * In order to use import these utilities, you have to use the "pluginutilscripts" jar
  * that comes bundled with this plugin example.
  */
-import com.urbancode.air.AirPluginTool;
-import com.urbancode.air.CommandHelper;
+
+import com.urbancode.air.plugin.helpers.NewAirPluginTool
 import groovy.io.FileType;
 
 /* This gets us the plugin tool helper.
@@ -19,7 +19,7 @@ import groovy.io.FileType;
  * Any arguments you wish to pass from the plugin.xml to this script that you don't want to
  * pass through the step properties can be accessed using this argument syntax
  */
-def apTool = new AirPluginTool(this.args[0], this.args[1])
+def apTool = new NewAirPluginTool(this.args[0], this.args[1])
 
 /* Here we call getStepProperties() to get a Properties object that contains the step properties
  * provided by the user.
